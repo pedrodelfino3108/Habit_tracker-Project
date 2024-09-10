@@ -1,0 +1,137 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 100%;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.habit {
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.habit h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.tracker {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    gap: 5px;
+}
+
+.tracker div {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.tracker .completed {
+    background-color: #4CAF50;
+}
+
+.complete {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.complete:hover {
+    background-color: #45a049;
+}
+
+
+.reset {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.reset:hover{background-color: #45a049;
+}
+
+
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-link {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+    opacity: 0.8; /* Torna o ícone um pouco transparente */
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
